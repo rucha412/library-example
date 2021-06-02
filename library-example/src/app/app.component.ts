@@ -16,7 +16,6 @@ export class AppComponent {
     Constants.key
   ).toString();
 
-  // Decrypt
   bytes = CryptoJS.AES.decrypt(this.ciphertext, Constants.key);
   originalText = this.bytes.toString(CryptoJS.enc.Utf8);
 }
